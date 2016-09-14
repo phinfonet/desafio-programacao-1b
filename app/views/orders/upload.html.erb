@@ -1,0 +1,4 @@
+<%= form_for :order, url: orders_store_from_file_path, html: {multipart: true} do |f| %>
+  <%= f.file_field :file %> 
+  <%= f.submit 'Submit', disable_with: 'Submiting...' %>
+<% end %>
